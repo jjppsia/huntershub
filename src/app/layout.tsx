@@ -5,7 +5,6 @@ import { metaDataConfig } from '@/config/meta-data'
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import Header from '@/components/header'
-import Providers from '@/components/providers'
 import TailwindIndicator from '@/components/tailwind-indicator'
 
 export const metadata: Metadata = {
@@ -15,8 +14,6 @@ export const metadata: Metadata = {
   },
   description: metaDataConfig.description,
   keywords: metaDataConfig.keywords,
-  themeColor: metaDataConfig.themeColor,
-  icons: metaDataConfig.icons,
 }
 
 type RootLayoutProps = {
@@ -34,13 +31,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
             fontSans.variable
           )}
         >
-          <Providers>
-            <div className='relative flex min-h-screen flex-col'>
-              <Header />
-              <main className='flex-1'>{children}</main>
-            </div>
-            <TailwindIndicator />
-          </Providers>
+          <div className='relative flex min-h-screen flex-col'>
+            <Header />
+            <main className='flex-1'>{children}</main>
+          </div>
+          <TailwindIndicator />
         </body>
       </html>
     </>
