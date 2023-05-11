@@ -25,7 +25,7 @@ function Hero() {
   return (
     <Container className='pb-16 pt-20 text-center lg:pt-32'>
       <h1 className='mx-auto max-w-4xl text-5xl font-medium tracking-tight sm:text-7xl'>
-        Head hunting{' '}
+        Headhunting{' '}
         <span className='relative whitespace-nowrap text-primary'>
           <span className='relative'>made simple</span>
         </span>{' '}
