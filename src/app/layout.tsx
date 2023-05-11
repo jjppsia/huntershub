@@ -1,28 +1,22 @@
 import '@/styles/globals.css'
 import { Metadata } from 'next'
 
-import { siteConfig } from '@/config/site'
+import { metaDataConfig } from '@/config/meta-data'
 import { fontSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
+import Header from '@/components/header'
 import Providers from '@/components/providers'
-import SiteHeader from '@/components/site-header'
 import TailwindIndicator from '@/components/tailwind-indicator'
 
 export const metadata: Metadata = {
   title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
+    default: metaDataConfig.name,
+    template: `%s - ${metaDataConfig.name}`,
   },
-  description: siteConfig.description,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'white' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
-  ],
-  icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
-  },
+  description: metaDataConfig.description,
+  keywords: metaDataConfig.keywords,
+  themeColor: metaDataConfig.themeColor,
+  icons: metaDataConfig.icons,
 }
 
 type RootLayoutProps = {
@@ -42,8 +36,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         >
           <Providers>
             <div className='relative flex min-h-screen flex-col'>
-              <SiteHeader />
-              <div className='flex-1'>{children}</div>
+              <Header />
+              <main className='flex-1'>{children}</main>
             </div>
             <TailwindIndicator />
           </Providers>
