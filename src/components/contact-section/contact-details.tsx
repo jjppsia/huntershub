@@ -24,9 +24,13 @@ export default function ContactDetails({ contactItems }: ContactDetailsProps) {
           />
         </dt>
         <dd>
-          123 Cant Find
+          Unit 706, 7/F Greenbelt Mansion,
           <br />
-          Location, FR
+          106 Perea St., Legaspi Village,
+          <br />
+          Brgy. San Lorenzo, Makati City,
+          <br />
+          1223 Philippines
         </dd>
       </div>
       {contactItems.map(({ icon, text, href }) => {
