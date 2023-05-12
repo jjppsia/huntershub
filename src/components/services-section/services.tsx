@@ -17,9 +17,9 @@ export default function Services({ services }: ServicesProps) {
         const Icon = Icons[icon]
 
         return (
-          <li key={title} className='rounded-2xl border border-gray-200 p-8'>
+          <li key={title} className='rounded-2xl border border-slate-200 p-8'>
             <Icon className='h-9 w-9' />
-            <h3 className='mt-6 text-xl font-semibold text-slate-900'>
+            <h3 className='mt-6 text-xl font-semibold text-secondary-foreground'>
               {title}
             </h3>
             <p className='mt-2'>{description}</p>
