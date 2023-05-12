@@ -1,17 +1,17 @@
 import { Container } from '@/components/ui/container'
-import ContactDetails, { type ContactItem } from './contact-details'
+import ContactDetails, { ContactItem } from './contact-details'
 import ContactForm from './contact-form'
 
 const contactItems: ContactItem[] = [
   {
+    text: '(02) 8403-0133',
+    href: 'tel:+63284030133',
     icon: 'phone',
-    text: '+63 917 123 4567',
-    href: 'tel:+63 917 123 4567',
   },
   {
-    icon: 'mail',
     text: 'hello@world.com',
     href: 'mailto:hello@world.com',
+    icon: 'mail',
   },
 ]
 
