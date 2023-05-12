@@ -1,6 +1,6 @@
 import { Container } from '@/components/ui/container'
 import Underline from '@/components/ui/underline'
-import Services, { type Service } from './services'
+import Services, { Service } from './services'
 
 const services: Service[] = [
   {
@@ -28,7 +28,7 @@ export default function ServicesSection() {
     <section id='services' className='py-20 sm:py-32'>
       <Container>
         <div className='mx-auto max-w-2xl sm:text-center'>
-          <h2 className='text-3xl font-medium tracking-tight text-gray-900'>
+          <h2 className='text-3xl font-medium tracking-tight text-secondary-foreground'>
             <Underline text='Our Services' color='fill-green-700' />
           </h2>
           <p className='mt-10 text-lg tracking-tight'>

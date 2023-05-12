@@ -6,7 +6,7 @@ import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
 
 import { Container } from '@/components/ui/container'
-import LogoCloud, { type ClientWithLogo } from './logo-cloud'
+import LogoCloud, { ClientWithLogo } from './logo-cloud'
 
 const clientsWithLogo: ClientWithLogo[][] = [
   [
