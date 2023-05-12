@@ -11,7 +11,7 @@ const navlinks: NavLink[] = [
     title: 'Services',
   },
   {
-    href: '#about',
+    href: '/about-us',
     title: 'About Us',
   },
   {
