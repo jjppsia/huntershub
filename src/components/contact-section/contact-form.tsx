@@ -18,10 +18,10 @@ export default function ContactForm() {
             <div className='mt-2.5'>
               <Input
                 type='text'
+                className='bg-background focus-visible:ring-primary'
                 name='first-name'
                 id='first-name'
                 autoComplete='given-name'
-                className='bg-background'
               />
             </div>
           </div>
@@ -35,10 +35,10 @@ export default function ContactForm() {
             <div className='mt-2.5'>
               <Input
                 type='text'
+                className='bg-background focus-visible:ring-primary'
                 name='last-name'
                 id='last-name'
                 autoComplete='family-name'
-                className='bg-background'
               />
             </div>
           </div>
@@ -49,10 +49,10 @@ export default function ContactForm() {
             <div className='mt-2.5'>
               <Input
                 type='email'
+                className='bg-background focus-visible:ring-primary'
                 name='email'
                 id='email'
                 autoComplete='email'
-                className='bg-background'
               />
             </div>
           </div>
@@ -66,10 +66,10 @@ export default function ContactForm() {
             <div className='mt-2.5'>
               <Input
                 type='tel'
+                className='bg-background focus-visible:ring-primary'
                 name='phone-number'
                 id='phone-number'
                 autoComplete='tel'
-                className='bg-background'
               />
             </div>
           </div>
@@ -79,8 +79,8 @@ export default function ContactForm() {
             </Label>
             <div className='mt-2.5'>
               <Textarea
+                className='resize-none bg-background focus-visible:ring-primary'
                 id='message'
-                className='bg-background'
                 name='message'
                 placeholder='Enter your message here.'
                 rows={4}
