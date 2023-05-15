@@ -8,10 +8,7 @@ import Header from '@/components/header'
 import TailwindIndicator from '@/components/tailwind-indicator'
 
 export const metadata: Metadata = {
-  title: {
-    default: metaDataConfig.name,
-    template: `%s - ${metaDataConfig.name}`,
-  },
+  title: metaDataConfig.title,
   description: metaDataConfig.description,
   keywords: metaDataConfig.keywords,
 }
